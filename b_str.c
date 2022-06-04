@@ -2,12 +2,14 @@
 #include<stdio.h>
 #include<string.h>
 
-char *not(char *str);
+char *not(char *);
+char *and(char *, char *);
 
 int main() {
-    char test[] = "1001";
-    puts(not(test));
-
+    
+    char test1[] = "1001";
+    char test2[] = "1101";
+    
     return 0;
 }
 
@@ -22,4 +24,8 @@ char *not(char *str) {
         }
     }
     return str;
+}
+
+char *and(char *str1, char *str2) {
+    
 }
