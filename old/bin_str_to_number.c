@@ -9,7 +9,7 @@ int main() {
     int b_str_len = strlen(b_str);
     int sum = 0;
 
-    // 從後面掃回來
+    // 從後面掃回來 
     for (int i = b_str_len - 1, power = 0; i >= 0; i--, power++) {
         if (b_str[i] == '1')
             sum += pow(2, power);
