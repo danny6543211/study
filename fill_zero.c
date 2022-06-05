@@ -30,7 +30,7 @@ void fill_zero(char **a, char **b) {
         for (int i = 0; i < new_len - a_len; i++) {
             new[i] = '0';
         }
-        strcat(new, *a);
+        strcpy(new + new_len - a_len, *a);
         // 改a指針的地址改到new
         *a = new;
     }
