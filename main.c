@@ -1,13 +1,7 @@
 #include<stdio.h>
-#include<stdlib.h>
-void test();
+#define max(x, y) x > y ? x : y
 
 int main() {
-    atexit(test);
-    printf("123\n");
-
+    printf("%d", max(max(2, 3), 2));
     return 0;
-}
-void test() {
-    printf("hello world\n");
 }
