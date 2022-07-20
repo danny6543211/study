@@ -1,6 +1,8 @@
 {
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
-        "cstdio": "c"
+        "cstdio": "c",
+        "stdio.h": "c",
+        "corecrt_stdio_config.h": "c"
     }
 }
