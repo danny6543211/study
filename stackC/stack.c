@@ -1,10 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
-struct node {
-    int value;
-    struct node *next;
-};
+#include "stack.h"
 
 // create new node
 struct node *createNode(int value) {
@@ -36,16 +32,4 @@ void printList(struct node *head) {
         printf("%d ", p->value);
         p = p->next;
     }
-}
-
-int main() {
-    struct node *head = createNode(0);
-    hPush(head, 1);
-    hPush(head, 2);
-    hPush(head, 3);
-    printf("%d\n", pop(head));
-    printf("%d\n", pop(head));
-    printList(head);
-    
-    return 0;
 }
